@@ -1,8 +1,10 @@
+// oder list childNode length function
 function getOderListNumber(numberId) {
     const numbers = document.getElementById(numberId).childNodes.length;
     const number = numbers - 1;
     return number;
 }
+// selecet button event handler added
 document.getElementById('btn-one').addEventListener('click', function () {
     const playerOneText = document.getElementById('player-one');
     const playerOne = playerOneText.innerText;
@@ -17,6 +19,7 @@ document.getElementById('btn-one').addEventListener('click', function () {
     listContainer.appendChild(li);
 
 })
+// selecet button event handler added
 document.getElementById('btn-tow').addEventListener('click', function () {
     const playerTowText = document.getElementById('player-tow');
     const playerTow = playerTowText.innerText;
@@ -33,6 +36,7 @@ document.getElementById('btn-tow').addEventListener('click', function () {
     listContainer.appendChild(li);
 
 })
+// selecet button event handler added
 document.getElementById('btn-three').addEventListener('click', function () {
     const playerThreeText = document.getElementById('player-three');
     const playerThree = playerThreeText.innerText;
@@ -49,9 +53,11 @@ document.getElementById('btn-three').addEventListener('click', function () {
     listContainer.appendChild(li);
 
 })
+// selecet button event handler added
 document.getElementById('btn-four').addEventListener('click', function () {
     const playerFourText = document.getElementById('player-four');
     const playerFour = playerFourText.innerText;
+
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
         return;
@@ -64,6 +70,7 @@ document.getElementById('btn-four').addEventListener('click', function () {
     listContainer.appendChild(li);
 
 })
+// selecet button event handler added
 document.getElementById('btn-five').addEventListener('click', function () {
     const playerFiveText = document.getElementById('player-five');
     const playerFive = playerFiveText.innerText;
@@ -79,6 +86,7 @@ document.getElementById('btn-five').addEventListener('click', function () {
     listContainer.appendChild(li);
 
 })
+// selecet button event handler added
 document.getElementById('btn-six').addEventListener('click', function () {
     const playerSixText = document.getElementById('player-six');
     const playerSix = playerSixText.innerText;
@@ -96,14 +104,16 @@ document.getElementById('btn-six').addEventListener('click', function () {
 
 })
 
-// player calculation
 
+// get input field number function
 function getInputFieldValueById(inputId) {
     const inputFieldValu = document.getElementById(inputId);
     const inputFieldValuString = inputFieldValu.value;
     const inputFieldAmount = parseFloat(inputFieldValuString)
     return inputFieldAmount;
 }
+
+//get text Element function declear
 function getTextElementById(TextElementId) {
     const TextElement = document.getElementById(TextElementId)
     const TextElementString = TextElement.innerText
@@ -111,10 +121,14 @@ function getTextElementById(TextElementId) {
     return Text;
 
 }
+
+// set element value function
 function setElementValuById(TextElement, newValue) {
     const setElement = document.getElementById(TextElement);
     setElement.innerText = newValue;
 }
+
+// calculate button event handler added
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerAmount = getInputFieldValueById('player-field');
 
@@ -125,6 +139,8 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
 
 })
+
+// total calculate button event handler added
 document.getElementById('btn-total-calculate').addEventListener('click', function () {
     const managerAmount = getInputFieldValueById('manager-field');
     const coachAmount = getInputFieldValueById('coach-field');
