@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Top Players</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-800">
+    <!-- header section start -->
+    <header class="bg-black p-20 ">
+        <h1 class="text-center mt-20 text-4xl font-bold text-orange-700	">World Top Fevarit Players</h1>
+        <p class="text-center pt-9 font-medium text-3xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+            <br><span>elit. Hicvitae eaofficiis, assumendanon quisquam?Soluta facilis animi ipsa e </span>
+        </p>
+    </header>
+    <!-- header section end -->
+
+    <section class="container mx-auto mt-12 ">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-8 ">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="border-2 border-gray-400">
+                        <img src="image/Background (1).png" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-one" class="pt-2 pb-3 font-medium text-2xl ">Mohamed Salah</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-one" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="border-2 border-gray-400">
+                        <img src="image/dibala.png" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-tow" class="pt-2 pb-3 font-medium text-2xl ">Paulo Dybala</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-tow" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="border-2 border-gray-400 ">
+                        <img class="h-90" src="image/messi1.jpg" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-three" class="pt-2 pb-3 font-medium text-2xl ">Lionel Messi</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-three" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="border-2 border-gray-400 ">
+                        <img class="h-90" src="image/hel.jpg" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-four" class="pt-2 pb-3 font-medium text-2xl ">Neymar</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-four" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="border-2 border-gray-400 ">
+                        <img class="h-90" src="image/sakib.jpg" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-five" class="pt-2 pb-3 font-medium text-2xl ">Shakib Al Hasan</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-five" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="border-2 border-gray-400 ">
+                        <img class="h-90" src="image/dimariya.jpg" alt="">
+                        <div class="bg-black text-white text-center p-4">
+                            <h2 id="player-six" class="pt-2 pb-3 font-medium text-2xl ">Ángel Di María</h2>
+                            <h4 class="text-gray-500">36 Goals 120 Assist</h4>
+                            <button id="btn-six" class="bg-blue-800 px-14 py-1 mt-3 ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 ">
+                <div class="bg-black text-white p-8 ">
+                    <h3 class="text-center font-bold pb-10">Selected - V</h3>
+                    <ol id="list-container" class="list-decimal">
+
+                    </ol>
+                </div>
+                <div class="bg-black text-white p-8 mt-12">
+                    <h3 class="text-center font-bold pb-10">Budget</h3>
+                    <p class="inline-block px-10">Per Player</p>
+                    <input id="player-field" type="text" class="bg-gray-800	">
+                    <div class="text-center mt-6">
+                        <button id="btn-calculate" class="bg-blue-800 px-10 py-1">Calculate</button>
+                    </div>
+                    <div class="mt-4 ">
+                        <p class="inline-block mx-9">Player Expenses</p>
+                        <h3 class="inline-block">$<span id="player-expenses"></span></h3>
+                    </div>
+                    <div class="mt-6 ">
+                        <p class="inline-block px-10">Manager</p>
+                        <input id="manager-field" type="text" class="bg-gray-800">
+                        <p class="inline-block px-10">Coach </p>
+                        <input id="coach-field" class="mt-2 mr-4 bg-gray-800" type="text">
+                    </div>
+                    <div class="text-center mt-6">
+                        <button id="btn-total-calculate" class="bg-blue-800 px-10 py-1">Calculate Total</button>
+                    </div>
+                    <div class="mt-4 flex justify-around ">
+                        <p class="inline-block mx-9">total</p>
+                        <h3 class="inline-block">$<span id="total"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class="mt-12 p-5">
+            <hr>
+            <h4 class="text-center mt-2">Copyright @ 2022 All Rights Reserved.</h4>
+        </footer>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
