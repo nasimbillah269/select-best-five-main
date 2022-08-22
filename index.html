@@ -75,34 +75,36 @@
             </div>
             <div class="col-span-4 ">
                 <div class="bg-black text-white p-8 h-80 text-ellipsis overflow-hidden">
-                    <h3 class="text-center font-bold pb-10">Selected - V</h3>
+                    <h3 class="text-center font-bold pb-10 text-2xl ">Selected - V</h3>
                     <ol id="list-container" class="list-decimal">
 
                     </ol>
                 </div>
                 <div class="bg-black text-white p-8 mt-12">
-                    <h3 class="text-center font-bold pb-10">Budget</h3>
-                    <p class="inline-block px-10">Per Player</p>
-                    <input id="player-field" type="text" class="bg-gray-800	">
+                    <h3 class="text-center font-bold pb-10 text-2xl">Budget</h3>
+                    <p class="inline-block px-10 font-medium text-gray-500">Per Player</p>
+                    <input id="player-field" type="text" class="bg-gray-800	w-40 p-1 rounded-lg">
                     <div class="text-center mt-6">
-                        <button id="btn-calculate" class="bg-blue-800 px-10 py-1">Calculate</button>
+                        <button id="btn-calculate" class="bg-blue-800 px-10 py-1 rounded-lg">Calculate</button>
                     </div>
                     <div class="mt-4 ">
-                        <p class="inline-block mx-9">Player Expenses</p>
+                        <p class="inline-block mx-9 font-medium text-gray-500">Player Expenses</p>
                         <h3 class="inline-block">$<span id="player-expenses"></span></h3>
                     </div>
                     <div class="mt-6 ">
-                        <p class="inline-block px-10">Manager</p>
-                        <input id="manager-field" type="text" class="bg-gray-800">
-                        <p class="inline-block px-10">Coach </p>
-                        <input id="coach-field" class="mt-2 mr-4 bg-gray-800" type="text">
+                        <p class="inline-block px-10 font-medium text-gray-500">Manager</p>
+                        <input id="manager-field" type="text" class="bg-gray-800 w-40 p-1 rounded-lg">
+                        <p class="inline-block px-10 font-medium text-gray-500">Coach </p>
+                        <input id="coach-field" class="mt-2 ml-5 bg-gray-800 w-40 p-1 rounded-lg" type="text">
                     </div>
                     <div class="text-center mt-6">
-                        <button id="btn-total-calculate" class="bg-blue-800 px-10 py-1">Calculate Total</button>
+                        <button id="btn-total-calculate" class="bg-blue-800 px-10 py-1 rounded-lg">Calculate
+                            Total</button>
                     </div>
                     <div class="mt-4 flex justify-around ">
-                        <p class="inline-block mx-9">total</p>
-                        <h3 class="inline-block">$<span id="total"></span></h3>
+                        <p class="inline-block font-medium text-gray-500">total</p>
+                        <h3 class="inline-block text-red-700 font-medium">$<span id="total"
+                                class="text-red-700	"></span></h3>
                     </div>
                 </div>
             </div>
