@@ -4,6 +4,18 @@ function getOderListNumber(numberId) {
     const number = numbers - 1;
     return number;
 }
+// onclick disabled button function
+function disabledButton(buttonId) {
+    const btn = document.getElementById(buttonId);
+    if (btn.disabled) {
+        btn.disabled = false;
+
+    } else {
+        btn.disabled = true;
+        btn.style.backgroundColor = 'rgb(156 163 175)'
+    }
+}
+
 // selecet button event handler added
 document.getElementById('btn-one').addEventListener('click', function () {
     const playerOneText = document.getElementById('player-one');
@@ -17,6 +29,7 @@ document.getElementById('btn-one').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerOne
     listContainer.appendChild(li);
+    disabledButton('btn-one')
 
 })
 // selecet button event handler added
@@ -34,6 +47,7 @@ document.getElementById('btn-tow').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerTow
     listContainer.appendChild(li);
+    disabledButton('btn-tow')
 
 })
 // selecet button event handler added
@@ -51,6 +65,7 @@ document.getElementById('btn-three').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerThree;
     listContainer.appendChild(li);
+    disabledButton('btn-three')
 
 })
 // selecet button event handler added
@@ -68,6 +83,7 @@ document.getElementById('btn-four').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerFour
     listContainer.appendChild(li);
+    disabledButton('btn-four');
 
 })
 // selecet button event handler added
@@ -84,6 +100,7 @@ document.getElementById('btn-five').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerFive
     listContainer.appendChild(li);
+    disabledButton('btn-five')
 
 })
 // selecet button event handler added
@@ -101,6 +118,7 @@ document.getElementById('btn-six').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerSix
     listContainer.appendChild(li);
+    disabledButton('btn-six')
 
 })
 
