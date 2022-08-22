@@ -16,7 +16,7 @@ function disabledButton(buttonId) {
     }
 }
 
-// selecet button event handler added
+// selecet button-one event handler added
 document.getElementById('btn-one').addEventListener('click', function () {
     const playerOneText = document.getElementById('player-one');
     const playerOne = playerOneText.innerText;
@@ -33,8 +33,8 @@ document.getElementById('btn-one').addEventListener('click', function () {
     disabledButton('btn-one')
 
 })
-// selecet button event handler added
-document.getElementById('btn-tow').addEventListener('click', function () {
+// selecet button-two event handler added
+document.getElementById('btn-two').addEventListener('click', function () {
     const playerTowText = document.getElementById('player-tow');
     const playerTow = playerTowText.innerText;
 
@@ -49,10 +49,10 @@ document.getElementById('btn-tow').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = playerTow
     listContainer.appendChild(li);
-    disabledButton('btn-tow')
+    disabledButton('btn-two')
 
 })
-// selecet button event handler added
+// selecet button-three event handler added
 document.getElementById('btn-three').addEventListener('click', function () {
     const playerThreeText = document.getElementById('player-three');
     const playerThree = playerThreeText.innerText;
@@ -71,7 +71,7 @@ document.getElementById('btn-three').addEventListener('click', function () {
     disabledButton('btn-three')
 
 })
-// selecet button event handler added
+// selecet button-fore event handler added
 document.getElementById('btn-four').addEventListener('click', function () {
     const playerFourText = document.getElementById('player-four');
     const playerFour = playerFourText.innerText;
@@ -90,7 +90,7 @@ document.getElementById('btn-four').addEventListener('click', function () {
     disabledButton('btn-four');
 
 })
-// selecet button event handler added
+// selecet button-five event handler added
 document.getElementById('btn-five').addEventListener('click', function () {
     const playerFiveText = document.getElementById('player-five');
     const playerFive = playerFiveText.innerText;
@@ -108,7 +108,7 @@ document.getElementById('btn-five').addEventListener('click', function () {
     disabledButton('btn-five')
 
 })
-// selecet button event handler added
+// selecet button-six event handler added
 document.getElementById('btn-six').addEventListener('click', function () {
     const playerSixText = document.getElementById('player-six');
     const playerSix = playerSixText.innerText;
