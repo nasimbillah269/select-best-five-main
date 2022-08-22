@@ -23,6 +23,7 @@ document.getElementById('btn-one').addEventListener('click', function () {
 
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
     const listContainer = document.getElementById('list-container');
@@ -39,6 +40,7 @@ document.getElementById('btn-tow').addEventListener('click', function () {
 
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
 
@@ -57,6 +59,7 @@ document.getElementById('btn-three').addEventListener('click', function () {
 
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
 
@@ -75,6 +78,7 @@ document.getElementById('btn-four').addEventListener('click', function () {
 
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
 
@@ -92,6 +96,7 @@ document.getElementById('btn-five').addEventListener('click', function () {
     const playerFive = playerFiveText.innerText;
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
 
@@ -110,6 +115,7 @@ document.getElementById('btn-six').addEventListener('click', function () {
 
     const listNumbers = getOderListNumber('list-container')
     if (listNumbers == 5) {
+        alert('no more than five players can be added to list');
         return;
     }
 
