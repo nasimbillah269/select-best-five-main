@@ -110,6 +110,7 @@ function getInputFieldValueById(inputId) {
     const inputFieldValu = document.getElementById(inputId);
     const inputFieldValuString = inputFieldValu.value;
     const inputFieldAmount = parseFloat(inputFieldValuString)
+    inputFieldValu.value = '';
     return inputFieldAmount;
 }
 
@@ -132,11 +133,15 @@ function setElementValuById(TextElement, newValue) {
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerAmount = getInputFieldValueById('player-field');
 
+    if (isNaN(perPlayerAmount)) {
+        alert('Please input Your valid number')
+        return;
+    }
+
     getTextElementById('player-expenses')
     const numbers = getOderListNumber('list-container')
     const playerExpenses = perPlayerAmount * numbers;
     setElementValuById('player-expenses', playerExpenses)
-
 
 })
 
@@ -145,6 +150,16 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
     const managerAmount = getInputFieldValueById('manager-field');
     const coachAmount = getInputFieldValueById('coach-field');
     const playerExpensesTotal = getTextElementById('player-expenses')
+
+    if (isNaN(managerAmount)) {
+        alert('please input your valid number');
+        return;
+    }
+
+    if (isNaN(coachAmount)) {
+        alert('please input your valid number');
+        return;
+    }
 
     const totalExpenses = playerExpensesTotal + managerAmount + coachAmount;
     setElementValuById('total', totalExpenses)
