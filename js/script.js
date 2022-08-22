@@ -1,23 +1,30 @@
 function getOderListNumber(numberId) {
     const numbers = document.getElementById(numberId).childNodes.length;
     const number = numbers - 1;
-
     return number;
 }
 document.getElementById('btn-one').addEventListener('click', function () {
     const playerOneText = document.getElementById('player-one');
     const playerOne = playerOneText.innerText;
 
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
     const listContainer = document.getElementById('list-container');
     const li = document.createElement('li');
     li.innerText = playerOne
     listContainer.appendChild(li);
 
-
 })
 document.getElementById('btn-tow').addEventListener('click', function () {
     const playerTowText = document.getElementById('player-tow');
     const playerTow = playerTowText.innerText;
+
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
 
     const listContainer = document.getElementById('list-container');
 
@@ -30,6 +37,11 @@ document.getElementById('btn-three').addEventListener('click', function () {
     const playerThreeText = document.getElementById('player-three');
     const playerThree = playerThreeText.innerText;
 
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
+
     const listContainer = document.getElementById('list-container');
 
     const li = document.createElement('li');
@@ -40,6 +52,10 @@ document.getElementById('btn-three').addEventListener('click', function () {
 document.getElementById('btn-four').addEventListener('click', function () {
     const playerFourText = document.getElementById('player-four');
     const playerFour = playerFourText.innerText;
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
 
     const listContainer = document.getElementById('list-container');
 
@@ -51,6 +67,10 @@ document.getElementById('btn-four').addEventListener('click', function () {
 document.getElementById('btn-five').addEventListener('click', function () {
     const playerFiveText = document.getElementById('player-five');
     const playerFive = playerFiveText.innerText;
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
 
     const listContainer = document.getElementById('list-container');
 
@@ -62,6 +82,11 @@ document.getElementById('btn-five').addEventListener('click', function () {
 document.getElementById('btn-six').addEventListener('click', function () {
     const playerSixText = document.getElementById('player-six');
     const playerSix = playerSixText.innerText;
+
+    const listNumbers = getOderListNumber('list-container')
+    if (listNumbers == 5) {
+        return;
+    }
 
     const listContainer = document.getElementById('list-container');
 
@@ -95,7 +120,6 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
     getTextElementById('player-expenses')
     const numbers = getOderListNumber('list-container')
-    // const playerNumber = 5;
     const playerExpenses = perPlayerAmount * numbers;
     setElementValuById('player-expenses', playerExpenses)
 
